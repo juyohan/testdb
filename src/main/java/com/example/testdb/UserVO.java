@@ -8,12 +8,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
-@NoArgsConstructor
+@Entity // DB와 연결을 해서 만들어준다.
+@NoArgsConstructor // 해당 어노테이션 찾아볼 것
 public class UserVO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    // 해당 어노테이션 찾아볼 것
+    // 여러 옵션이 있는데 그중에 위의 옵션이 어떤것이 있는 지
+
     private Long id;
 
     private String title;

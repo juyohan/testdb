@@ -5,8 +5,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service // 해당 어노테이션이 무슨 역할을 하는지
 public class UserServiceImp implements UserService{
+
     private UserRepository userRepository;
 
     @Autowired
